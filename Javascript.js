@@ -1,5 +1,6 @@
 let btn = document.getElementById("btn");
 let output = document.getElementById("output");
+let lucky = document.getElementById("lucky");
 let quote =[ 
 
 "Surround yourself with a bunch of like-minded people, and you'll soak up their habits like a starved sponge. Fat people with fat friends care less about their weight",
@@ -14,8 +15,12 @@ let quote =[
 "The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime",
 
 ];
+let num = [1,2,3,4,5,6,7,8,9];
+
 
 btn.addEventListener('click', function(){
  var randomQuote = quote[Math.floor(Math.random() * quote.length)]
+ var randomNum  = num[Math.floor(Math.random() * num.length)]
 output.innerHTML = randomQuote;
+lucky.innerHTML = randomNum;
 })

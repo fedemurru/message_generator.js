@@ -54,7 +54,7 @@ body {
   transform: translateY(0);
 }
 
-#output {
+#output, #lucky, #your {
     margin: 2px auto;
     font-size: 22px;
     color: white;
